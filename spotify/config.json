@@ -1,6 +1,6 @@
 {
     "name": "Spotify",
-    "version": "0.0.1a4",
+    "version": "0.0.1a6",
     "slug": "spotify",
     "description": "Spotify",
     "arch": ["amd64"],
