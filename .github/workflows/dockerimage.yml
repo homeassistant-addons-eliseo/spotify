@@ -19,7 +19,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Build the Docker image
       run: |
-        cd resting-catt
+        cd spotify
         docker build . --file Dockerfile --tag eliseomartelli/spotify:${{ steps.get_version.outputs.VERSION }}
         echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
         docker push eliseomartelli/spotify:${{ steps.get_version.outputs.VERSION }}
