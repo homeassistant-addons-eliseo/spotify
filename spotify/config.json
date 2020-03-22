@@ -1,0 +1,15 @@
+{
+    "name": "Spotify",
+    "version": "0.0.1",
+    "slug": "spotify",
+    "description": "Spotify",
+    "arch": ["amd64"],
+    "startup": "application",
+    "url": "https://github.com/homeassistant-addons-eliseo/spotify",
+    "boot": "auto",
+    "host_network": true,
+    "options": {
+    },
+    "schema": {},
+    "image": "eliseomartelli/spotify"
+}
