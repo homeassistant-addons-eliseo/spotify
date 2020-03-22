@@ -36,4 +36,4 @@ RUN apt-get update \
         /var/{cache,log}/* \
         /var/lib/apt/lists/*
 
-CMD ["spotifyd --no-daemon --backend pipe > /tmp/fifo"]
+CMD ["mkdir -p /share/spotify && spotifyd --no-daemon --backend pipe > /share/spotify/fifo"]
