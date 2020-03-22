@@ -21,7 +21,7 @@ jobs:
         uses: andstor/copycat-action@v3
         with:
           personal_token: ${{ secrets.PERSONAL_TOKEN }}
-          src_path: /base
+          src_path: /spotify
           dst_path: /.
           dst_owner: homeassistant-addons-eliseo
           dst_repo_name: repository

@@ -20,6 +20,6 @@ jobs:
     - name: Build the Docker image
       run: |
         cd resting-catt
-        docker build . --file Dockerfile --tag eliseomartelli/base:${{ steps.get_version.outputs.VERSION }}
+        docker build . --file Dockerfile --tag eliseomartelli/spotify:${{ steps.get_version.outputs.VERSION }}
         echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
-        docker push eliseomartelli/base:${{ steps.get_version.outputs.VERSION }}
+        docker push eliseomartelli/spotify:${{ steps.get_version.outputs.VERSION }}
