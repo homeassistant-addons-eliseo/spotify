@@ -15,7 +15,7 @@ RUN apt-get update \
         rustc=1.39.0+dfsg1+llvm-3ubuntu1~18.04.1 \
     \
     && git clone --branch "v0.2.23" --depth=1 \
-        https://github.com/Spotifyd/spotifyd.git /tmp/spotifyd \
+        http://github.com/Spotifyd/spotifyd.git /tmp/spotifyd \
     \
     && cd /tmp/spotifyd \
     && cargo build --release \
